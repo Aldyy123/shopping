@@ -1,0 +1,29 @@
+<ul class="nav parent-dropdown">
+    <li class="nav-item dropdown">
+        <a href="/" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" id="navbarDropdown">
+            <% if(name.picture){ %>
+                <img src="<%= name.picture %>" style="border-radius: 10px;" width="25px" alt="user"> <%= name.name %>
+            <% }else{ %>
+                <img src="svg/user.svg" width="25px" alt="user"> <%= name.name %>
+            <% } %>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="/profile">
+                   <img src="svg/register.svg" width="15px" alt="register"> Profile
+               </a>
+
+               <a class="dropdown-item" href="/profile">
+                   <img src="svg/register.svg" width="15px" alt="register"> Favorite
+               </a>
+               
+                <a class="dropdown-item" href="/chats">
+                    <img src="svg/register.svg" width="15px" alt="register"> Chats
+                </a>
+
+               <hr>
+                <a class="dropdown-item" href="/logout">
+                    <img src="svg/register.svg" width="15px" alt="register"> Logout
+                </a>
+        </div>
+    </li>
+</ul>

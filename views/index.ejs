@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('components/header') %>
+    <title>Home</title>
+  </head>
+  <body>
+    <%- include('nav-components/nav') %>
+
+    <main class="landing-index">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <h3 class="text-center">Reading And Shopping</h3>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-6">
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="description mt-5">
+      <div class="container">
+        <h3 class="text-center">What Different is here</h3>
+        <div class="line-hr">
+          <div class="line-in"></div>
+        </div>
+        <div class="row first">
+          <div class="col-md-6">
+            <p>
+              Kamu bisa <b>Membaca Blog</b> atau <b>Artikel</b>
+              dari semua orang yang berkontribusi dan berbagi ceritanya.
+              kamu juga bisa membuat artikel sendiri
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="svg/book_reading.svg"
+              class="img-fluid"
+              width="450px"
+              alt="Reading"
+            />
+          </div>
+        </div>
+        <div class="row second">
+          <div class="col-md-6">
+            <img
+              src="svg/web_shopping.svg"
+              class="img-fluid"
+              width="450px"
+              alt="Shopping"
+            />
+          </div>
+          <div class="col-md-6">
+            <p>
+             Kamu juga bisa <b>berbelanja dengan aman dan nyaman</b>, serta barang yang berkualitas bagi customer
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Get Started ?</h3>
+            <a href="#" class="btn btn-primary">Getting Started</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="subcribe">
+      <div class="container">
+        <h2>Subcribe</h2>
+        <div class="input-subcribe">
+          <input type="email" placeholder="Email" class="form-control" required />
+          <button type="submit" class="btn btn-primary">
+            Send <i class="far fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <%- include('components/footer') %>
+  </body>
+</html>

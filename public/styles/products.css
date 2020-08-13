@@ -1,0 +1,36 @@
+main.products .category {
+  position: sticky;
+  padding: 20px;
+  width: 250px;
+  display: block;
+}
+ul{
+    list-style-type: none;
+}
+#category{
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+#category:hover{
+  color: darkcyan;
+}
+#accordian{
+  padding: 10px!important;
+  margin: 10px;
+}
+.accordian > li{
+  cursor: pointer;
+}
+.list{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.open{
+  overflow: scroll;
+  height: 120px;
+  transition: all 0.5s;
+}
+.open::-webkit-scrollbar{
+  display: none;
+}

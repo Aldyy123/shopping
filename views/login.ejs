@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('components/header') %>
+    <title>Login</title>
+  </head>
+  <body>
+    <%- include('nav-components/nav') %>
+
+    <main class="main">
+      <div class="container bg-light">
+        <div class="form-login">
+          <h3 class="text-center">Sign In</h3>
+
+          <form action="/login" method="post">
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input
+                type="text"
+                required="true"
+                name="email"
+                autocomplete="email"
+                class="form-control"
+                value="<%= oldInput.value('email') %>"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input
+                type="password"
+                name="password"
+                required
+                id="password"
+                aria-describedby="password-constraints"
+                autocomplete="current-password"
+                class="form-control"
+                value="<%= oldInput.value('password') %>"
+              />
+              <label for="show_password">
+                <input
+                  type="checkbox"
+                  name="show_password"
+                  id="show_password"
+                />
+                Show Password
+              </label>
+            </div>
+
+            <div class="errors">
+              <% if (messages.error != undefined) { %> <%
+              messages.error.forEach(msg => { %>
+              <div class="alert alert-danger" role="alert">
+                <%= msg %>
+              </div>
+              <% }) %> <% } %>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-md-6">
+                <input
+                  type="submit"
+                  value="Login"
+                  class="btn btn-outline-primary"
+                />
+              </div>
+              <div class="col-md-6">
+                <a href="/forgotPass" class="nav-link">Forgot Password</a>
+              </div>
+            </div>
+
+            <div class="line d-flex justify-content-between">
+              <hr class="line-hr" />
+              OR
+              <hr class="line-hr" />
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a href="/auth/google" class="btn btn-light"
+                ><img src="svg/google.svg" width="30px" alt="google"
+              /></a>
+              <a href="/auth/facebook" class="btn btn-light ml-2"
+                ><img src="svg/facebook.svg" width="30px" alt="fb"
+              /></a>
+            </div>
+            <p>Enought Account <a href="/register">Register</a></p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <%- include('components/footer') %>
+  </body>
+</html>

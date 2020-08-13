@@ -1,0 +1,57 @@
+main.main{
+    margin: 50px 0;
+    height: 39.7rem;
+    max-width: 100%;
+    padding-top: 70px;
+    background-image: url(../img/market.png);
+    background-size: cover;
+    display: flex;
+    align-content: center;
+}
+main.main .container{
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 11%;
+    padding: 20px;
+}
+main.main .container .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+main.main .container .form form .form-group{
+    margin-left: 20px;
+}
+main.main .container input.submit{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #445544, #49ce49);
+}
+main.main .container input.submit:hover{
+    transition: all ease-in;
+    background: linear-gradient(to left, #4d9ba8, #49ce49);
+}
+main.main .container input.submit:focus{
+    outline: none;
+}
+main.main .container .form-login{
+    width: 50%;
+}
+main.main .container .form-login .line-hr{
+    width: 40%;
+    height: 3px;
+    background-color: red;
+}
+
+input[type=email]:invalid{
+    background-color: red;
+    color: white;
+}
+

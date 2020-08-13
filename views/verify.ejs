@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('components/header') %>
+    <title>Document</title>
+</head>
+<body>
+
+    <%- include('nav-components/nav') %>
+    
+   <div class="container">
+    <div class="email-sent">
+        <img src="svg/sent-email.svg" width="450xp" class="img-fluid" alt="sent email">
+        <div class="text">
+            <p>Your email is verification</p>
+            <form action="/verify" method="post">
+                
+                <input type="submit" class="btn btn-primary" value="Click send email">
+            </form>
+        </div>
+   </div>
+   </div>
+
+    <%- include('components/footer') %>
+</body>
+</html>

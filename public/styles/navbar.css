@@ -1,0 +1,45 @@
+/* Navigation */
+nav {
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+nav ul.collapse-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul.collapse-nav li {
+  padding-left: 10px;
+}
+
+nav ul.collapse-nav li a {
+  color: black;
+}
+nav ul.collapse-nav ul.parent-dropdown {
+  margin-right: 75px;
+  z-index: 999!important;
+  overflow: visible;
+}
+nav .button-collapse{
+  margin-left: 300px;
+  z-index: 999;
+  display: none;
+  border: 1px solid gray;
+  position: relative;
+}
+nav .button-collapse input[type='checkbox'] {
+  padding: 20px;
+  box-sizing: content-box;
+  cursor: pointer;
+  width: 2em;
+  position: absolute;
+  opacity: 0;
+  height: 2em;
+  background-color: black;
+}

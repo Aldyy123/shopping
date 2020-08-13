@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('components/header') %>
+    <title>Product</title>
+  </head>
+  <body>
+    <%- include('nav-components/nav') %> <%- include('components/landing-page')
+    %>
+
+    <main class="products">
+      <div class="container">
+        <div class="category bg-dark">
+          <h3 class="text-light">Filter</h3>
+          <ul id="accordian" class="text-light">
+            <li><div id="category">Category</div></li>
+            <li>
+              <div class="list">
+                <div>
+                  <input type="checkbox" name="sepatu" id="sepatu">
+                  <label for="sepatu">Sepatu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="elektronik" id="elektronik">
+                  <label for="elektronik">Elektronik</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="kaos" id="kaos">
+                  <label for="kaos">Kaos</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="celana" id="celana">
+                  <label for="celana">Celana</label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <%- include('components/footer') %>
+  </body>
+</html>

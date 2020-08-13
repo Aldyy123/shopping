@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('components/header') %>
+    <title>Profile</title>
+  </head>
+  <body>
+    <%- include('nav-components/nav') %>
+
+    <main class="container">
+      <div class="profile row">
+        <div class="col-md-12">
+          <form action="/profile" method="post" enctype="multipart/form-data">
+            <div class="main-profile">
+              <div class="photo-profile">
+                <img id="my-profile" src="svg/user.svg" />
+                <input
+                  class="position-absolute"
+                  id="image-profile"
+                  type="file"
+                  name="picture"
+                />
+              </div>
+              <div class="progress">
+                <div class="inner-progress">
+                  <span></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" class="form-control" />
+              </div>
+              <button type="submit" class="btn btn-primary">Save Gan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <%- include('components/footer') %>
+  </body>
+</html>

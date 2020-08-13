@@ -1,0 +1,125 @@
+@media screen and (max-width: 992px) {
+  main .container #register-page {
+    display: none;
+  }
+  main .container .form .btn-choose {
+    justify-content: space-around;
+  }
+  main.landing-index .row div > h3,
+  main.description h3 {
+    font-size: 23px !important;
+  }
+  main.description .row p {
+    font-size: 16px !important;
+  }
+  main.blogs .row {
+    align-self: center;
+    justify-content: center;
+  }
+  main.blogs .row .form-group {
+    width: 100% !important;
+  }
+  main.blogs .row h4 {
+    font-size: 18px;
+  }
+  main.blogs .container .blogs-category label {
+    font-size: 15px;
+  }
+  .category{
+    width: 100%!important;
+  }
+  .list{
+    display: flex;
+    justify-content: space-around;
+    background-color: seagreen;
+  }
+  .list div{
+    height: 40px;
+    padding: 5px;
+  }
+  .open{
+    height: 10px!important;
+  }
+
+}
+
+/* @media screen and (max-width: 600px){
+    #navigation{
+        flex-direction: column-reverse!important;
+        background-color: grey;
+        box-sizing: border-box;
+        box-shadow: grey -6px 6px 8px;
+        width: auto!important;
+        height: 65rem;
+        overflow: visible;
+        display: none;
+        z-index: 9;
+    }
+    #navigation .collapse-nav{
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+    }
+    #navigation .parent-dropdown{
+        position: absolute;
+    }
+    #nav-id{
+        position: absolute;
+        left: 80%!important;
+        display: block!important;
+        z-index: 99;
+    }
+} */
+
+@media screen and (max-width: 767px) {
+  div.landing {
+    width: 90%;
+  }
+  nav .button-collapse {
+    display: block !important;
+  }
+  div.landing div:last-child {
+    display: none;
+  }
+  div.landing > div h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul.collapse-nav::before {
+    transform: translate(20, -8);
+  }
+  nav ul.collapse-nav {
+    position: absolute;
+    background-color: aqua;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    height: 0;
+    transition: all 0.9s;
+    overflow: hidden;
+  }
+  main.main div.container {
+    width: 90% !important;
+  }
+  main.main div.form > h3 {
+    font-size: 20px;
+  }
+  main div.form form {
+    font-size: 14px;
+  }
+  main.description .container div.first {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .open {
+    height: 11em !important;
+  }
+  main.subcribe .container .input-subcribe {
+    padding: 20px;
+    width: 100% !important;
+  }
+}

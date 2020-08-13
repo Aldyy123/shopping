@@ -1,0 +1,80 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+@import url('https://fonts.google.com/specimen/Bree+Serif?selection.family=Bree+Serif|Pacifico');
+@import './form.css';
+@import './phones/medium.css';
+@import './profile.css';
+@import './navbar.css';
+@import './landing-index.css';
+@import './footer.css';
+@import './products.css';
+@import './blogs.css';
+
+*{
+  max-width: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+
+/* Landing Page */
+
+.landing{
+  background-image: url(../img/market.png);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 80px 0;
+  background-clip: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+.landing .text-landing{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  font-family: 'Rubik', sans-serif;
+  padding: 10px;
+}
+.landing .text-landing input[type=text]::placeholder{
+  margin-left: 80px;
+  font-family: 'Rubik', sans-serif;
+  /* background-color: black;
+  color: white; */
+  padding-left: 40px;
+}
+.landing .text-landing input[type=text]{
+  margin-top: 10px;
+  background-image: url(../svg/icons-search.svg);
+  background-size: 29px;
+  background-repeat: no-repeat;
+  background-position: 9px 10px;
+  box-sizing: border-box;
+  width: 120%;
+  height: 40px;
+  padding-left: 50px;
+  border-radius: 35px;
+  border: none;
+}
+.landing .text-landing input[type=text]:focus{
+  border: none;
+  outline: none;
+}
+.container .email-sent{
+  margin-top: 50px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* End Landing */
+
+/* Verify */
+main.verify-user-page div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* End Verify */

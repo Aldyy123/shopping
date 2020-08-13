@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('components/header') %>
+   <title>Home</title>
+</head>
+<body>
+    
+    <%- include('nav-components/nav') %>
+
+
+   <div class="container d-flex" style="height: 500px; align-content: center;">
+    <div class="form-reset d-flex justify-content-center" style="flex-direction: column;
+    width: 50%; margin: 0 auto;">
+    <h1 class="text-center">Your Email for Send</h1>
+        <div class="form-group">
+            <input type="email" placeholder="Insert Your Email" class="form-control" id="email">
+        </div>
+        <button type="submit" id="send-reset-pass" class="btn btn-primary">Send</button>
+        <div id="error"></div>
+    </div>
+   </div>
+
+    <h1 id="error"></h1>
+
+    <%- include('components/footer') %>
+</body>
+</html>

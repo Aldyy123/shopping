@@ -1,0 +1,109 @@
+main.landing-index {
+  background: url(https://cdn.pixabay.com/photo/2018/03/19/18/20/tea-time-3240766__340.jpg)
+    center fixed;
+  background-size: cover;
+  width: 100%;
+  margin: 40px 0;
+}
+main.landing-index > div {
+  width: 100%;
+  background-color: coral;
+  opacity: 0.5;
+}
+main.landing-index .row div > h3 {
+  color: white;
+}
+main.landing-index .row div > h3,
+main.description h3 {
+  font-weight: bold;
+  font-size: 37px;
+  font-family: 'Pacifico', cursive;
+}
+main.landing-index .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+main.description p {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Bree Serif', cursive;
+}
+main.description .kartu {
+  border-radius: 100px;
+  width: 100%;
+  background-color: crimson;
+}
+main.landing-index .row,
+main.description .row {
+  margin: 20px;
+  padding: 20px;
+}
+main.description .kartu .my-photo {
+  text-align: center;
+}
+main.description .kartu .my-photo img {
+  border-radius: 50%;
+  width: 200px;
+}
+main.description .kartu .my-photo img:hover {
+  transform: skewX(1);
+}
+main.description .container .line-hr {
+  width: 80%;
+  margin: 0 auto;
+  height: 4px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  background-color: grey;
+}
+
+main.description .container .line-hr .line-in {
+  width: 40%;
+  margin: 0 auto;
+  height: 3px;
+  background-color: aqua;
+}
+main.description .container .row .col-md-6:first-child,
+main.description .container .row .col-md-6:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.start {
+  margin: 40px 0;
+}
+
+main.subcribe .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+}
+main.subcribe .container .input-subcribe {
+  display: flex;
+  width: 50%;
+}
+main.subcribe .container .input-subcribe input[type='email'] {
+  border-radius: 60px;
+  background-color: black;
+}
+main.subcribe .container .input-subcribe input[type='email']::placeholder {
+  margin-left: 20px;
+  color: white;
+}
+main.subcribe .container .input-subcribe button {
+  display: flex;
+  border-radius: 60px;
+  margin-left: -70px;
+  padding-right: 20px;
+}
+main.subcribe .container .row > div {
+  border-radius: 100px;
+  background-color: gray;
+  padding: 80px;
+}
