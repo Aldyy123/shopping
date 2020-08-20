@@ -26,11 +26,11 @@ ul{
   overflow: hidden;
   transition: all 0.5s;
 }
-.open{
+.open-list{
   overflow: scroll;
   height: 120px;
   transition: all 0.5s;
 }
-.open::-webkit-scrollbar{
+.open-list::-webkit-scrollbar{
   display: none;
 }

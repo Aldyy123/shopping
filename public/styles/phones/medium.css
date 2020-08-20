@@ -37,8 +37,8 @@
     height: 40px;
     padding: 5px;
   }
-  .open{
-    height: 10px!important;
+  .open-list{
+    height: auto;
   }
 
 }

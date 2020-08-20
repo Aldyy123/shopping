@@ -1,18 +1,4 @@
-// const dropdown = $('.dropdown .dropdown-menu')
-
-// $('li.dropdown').hover(
-//   function () {
-//     // over
-//     dropdown.css('transition', 'all 0.5s')
-//     dropdown.css('display', 'block')
-//     dropdown.css('background-color', 'white')
-//   },
-//   function () {
-//     // out
-//     dropdown.css('overflow', 'hidden')
-//     dropdown.css('display', 'none')
-//   },
-// )
+const axios = window.axios
 
 // Send password
 $('#send-reset-pass').on('click', function () {
@@ -73,7 +59,7 @@ $('#show_password').on('click', function (e) {
 
 $('#category').on('click', function () {
   const list = document.querySelector('.list')
-  list.classList.toggle('open')
+  list.classList.toggle('open-list')
 })
 
 // const checkbox = document.querySelector('.products .row .category input')
@@ -116,6 +102,23 @@ if (window.location.href === 'http://localhost:4000/profile') {
   })
 }
 
-// window.addEventListener('load', function (e) {
-//   console.log(e)
-// })
+const sendBlog = document.querySelector('#save-blog')
+sendBlog.addEventListener('click', function () {
+  const titleBlog = document.querySelector('#title-blog').value
+  const descriptionBlog = document.querySelector('#description-blog').value
+
+  axios
+    .post('http://localhost:4000/create', {
+      title: titleBlog,
+      description: descriptionBlog,
+    })
+    .then((response) => {
+      if (response.status === 200) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Blog created ',
+          text : 'Blog has ben created'
+        })
+      }
+    }).catch(error => console.log(error))
+})

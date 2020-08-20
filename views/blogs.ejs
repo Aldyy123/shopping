@@ -8,30 +8,73 @@
     <%- include('nav-components/nav') %>
 
     <main class="blogs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="text-center mb-5">Update Blogs</h4>
-                    <div class="form-group">
-                        <input type="search" id="search" placeholder="Search..." class="form-control">
-                    </div>
-                </div>
-                <!-- <div class="col-md-6">
-                    <div class="landing-blogs">
-                        <img src="svg/blog.svg">
-                    </div>
-                </div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-center mb-5">Update Blogs</h4>
+            <div class="form-group">
+              <input
+                type="search"
+                id="search"
+                placeholder="Search..."
+                class="form-control"
+              />
             </div>
-            <div class="blogs-category text-right mt-4">
-                <label for="category">Category : </label>
-                <select id="">
-                    <option value="all" selected>ALL</option>
-                    <option value="game">Bisnis</option>
-                    <option value="game">Game</option>
-                    <option value="academic">Academic</option>
-                </select>
-            </div>
+          </div>
         </div>
+        <div class="blogs-category text-right mt-4">
+          <label for="category">Category : </label>
+          <select id="">
+            <option value="all" selected>ALL</option>
+            <option value="game">Bisnis</option>
+            <option value="game">Game</option>
+            <option value="academic">Academic</option>
+          </select>
+        </div>
+      </div>
+    </main>
+
+    <main class="content-blogs container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="text-muted text-right">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="text-muted text-right">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="text-muted text-right">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <%- include('components/footer') %>
