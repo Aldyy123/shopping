@@ -13,6 +13,10 @@ const blogsSchema = new mongoose.Schema({
     },
     category : {
         type : String
+    },
+    time : {
+        type : String,
+        default : Date.now()
     }
 })
 
