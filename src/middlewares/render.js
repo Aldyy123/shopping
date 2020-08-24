@@ -78,10 +78,16 @@ const products = async (req, res, next) => {
   try {
     req.session.user = req.user
     res.render('products', {
-      name: req.session.user
+      name: req.session.user,
     })
     return next()
   } catch (error) {}
+}
+
+const myBlog = (req, res) => {
+  res.render('my-blog', {
+    name: req.session.user,
+  })
 }
 
 module.exports = {
@@ -93,4 +99,5 @@ module.exports = {
   verify,
   blogs,
   products,
+  myBlog
 }

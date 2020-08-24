@@ -13,6 +13,9 @@ router
   .get(render.forgotPass)
   .post(userController.resetPassword)
 
+router.route('/my-blog')
+.get(render.myBlog)
+
 router.route('/blogs').get(render.blogs)
 
 router.route('/products').get(render.products)

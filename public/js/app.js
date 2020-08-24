@@ -1,5 +1,6 @@
 const axios = window.axios
 
+
 // Send password
 $('#send-reset-pass').on('click', function () {
   const email = $('#email').val()
@@ -79,10 +80,12 @@ coba.addEventListener('click', () => {
   nav.classList.toggle('open')
 })
 
-if (window.location.href === 'http://localhost:4000/profile') {
+// if (window.location.href === 'http://localhost:4000/profile') {
   const inputPicture = document.querySelector('#image-profile')
   const myProfile = document.querySelector('#my-profile')
   const progress = document.querySelector('.inner-progress')
+
+console.log(inputPicture)
 
   inputPicture.addEventListener('change', function (e) {
     const reader = new FileReader()
@@ -100,7 +103,7 @@ if (window.location.href === 'http://localhost:4000/profile') {
       reader.readAsDataURL(this.files[0])
     }
   })
-}
+// }
 
 const sendBlog = document.querySelector('#save-blog')
 sendBlog.addEventListener('click', function () {

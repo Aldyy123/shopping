@@ -1,0 +1,29 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('components/header') %>
+   <title>Home</title>
+</head>
+<body>
+    
+    <%- include('nav-components/nav') %>
+
+ <main class="create-blog">
+      <div class="container">
+        <div class="form-group">
+          <label for="title-blog">Title</label>
+          <input type="text" id="title-blog" name="title-blog" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="description-blog">Description</label>
+          <textarea id="description-blog" name="description-blog" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" id="save-blog" class="btn btn-primary">Submit</button>
+      </div>
+    </main>
+
+    
+    <%- include('components/footer') %>
+</body>
+</html>
